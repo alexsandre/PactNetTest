@@ -18,15 +18,15 @@ namespace PactTest.API.Controllers
             this.configuration = config;
         }
 
-        [Route("{eventId:int}")]
-        public Code.Event Get(int eventId)
+        [Route("{id:int}")]
+        public Code.Event Get(int id)
         {
             
             return new Code.Event()
             {
                 Id = 1,
-                Description = "Descrição",
-                Image = "urlimage",
+                Description = "Event Description",
+                Image = "Event image url",
                 Start = DateTime.Now,
                 End = DateTime.Now,
                 RegistrationStart = DateTime.Now,

@@ -23,7 +23,7 @@ namespace PactTest.API.Tests
 
             _webHost = WebHost.CreateDefaultBuilder()
                 .UseKestrel()
-                .UseStartup<TestStartup>()
+                .UseStartup<Startup>()
                 .Build();
 
             _webHost.Start();
@@ -39,7 +39,7 @@ namespace PactTest.API.Tests
                     new NUnitOutput()
                 },
                 Verbose = true,
-                PublishVerificationResults = true,
+                //PublishVerificationResults = true,
                 ProviderVersion = "1.0.0-adasdas"
             };
 
