@@ -48,7 +48,7 @@ namespace PactTest.App2.Tests
                 Status = 200,
                 Headers = new Dictionary<string, object>
                 {
-                    { "Content-Type", "application/json" }
+                    { "Content-Type", "application/json; charset=utf-8" }
                 },
                 Body = new
                 {
