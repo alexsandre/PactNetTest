@@ -4,17 +4,17 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace PactTest.App1.Tests
+namespace PactTest.App2.Tests
 {
     public class PactTestApiPact : IDisposable
     {
-        private const string ConsumerName = "App1";
+        private const string ConsumerName = "App2";
         private const string ProviderName = "PactTest.API";
 
         public IPactBuilder PactBuilder { get; private set; }
         public IMockProviderService MockProviderService { get; private set; }
 
-        public int MockServerPort => 9310;
+        public int MockServerPort => 9311;
         public string MockProviderServerBaseUri => $"http://localhost:{MockServerPort}";
 
         public PactTestApiPact()
