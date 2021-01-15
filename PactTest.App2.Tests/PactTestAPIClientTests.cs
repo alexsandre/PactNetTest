@@ -50,7 +50,7 @@ namespace PactTest.App2.Tests
                 {
                     { "Content-Type", "application/json; charset=utf-8" }
                 },
-                Body = new
+                Body = Match.Type(new
                 {
                     id = 1,
                     description = "Event Description",
@@ -58,7 +58,7 @@ namespace PactTest.App2.Tests
                     End = Match.Regex("10/06/2021", @"\d{2}\/\d{2}\/\d{4}"),
                     RegistrationStart = Match.Regex("01/05/2021", @"\d{2}\/\d{2}\/\d{4}"),
                     RegistrationEnd = Match.Regex("30/05/2021", @"\d{2}\/\d{2}\/\d{4}"),
-                }
+                })
             });
 
             //Arrange

@@ -5,6 +5,7 @@ using System.Text;
 using PactTest.App1;
 using PactNet.Mocks.MockHttpService;
 using PactNet.Mocks.MockHttpService.Models;
+using PactNet.Matchers;
 
 namespace PactTest.App1.Tests
 {
@@ -50,12 +51,12 @@ namespace PactTest.App1.Tests
                 {
                     { "Content-Type", "application/json; charset=utf-8" }
                 },
-                Body = new
+                Body = Match.Type(new
                 {
                     id = 1,
                     description = "Event Description",
                     image = "Event image url"
-                }
+                })
             });
 
             //Arrange

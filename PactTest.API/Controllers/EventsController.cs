@@ -25,9 +25,9 @@ namespace PactTest.API.Controllers
             return new Code.Event()
             {
                 Id = 1,
-                Description = "Event Description",
-                Image = "Event image url",
-                Start = DateTime.Now,
+                Description = "Qualquer descrição aqui",
+                Image = "url de imagem aqui",
+                Start = new DateTime(2021, 06, 01),
                 End = DateTime.Now,
                 RegistrationStart = DateTime.Now,
                 RegistrationEnd = DateTime.Now
