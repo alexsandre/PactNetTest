@@ -54,10 +54,10 @@ namespace PactTest.App2.Tests
                 {
                     id = 1,
                     description = "Event Description",
-                    Start = Match.Regex("01/06/2021", @"\d{2}\/\d{2}\/\d{4}"),
-                    End = Match.Regex("10/06/2021", @"\d{2}\/\d{2}\/\d{4}"),
-                    RegistrationStart = Match.Regex("01/05/2021", @"\d{2}\/\d{2}\/\d{4}"),
-                    RegistrationEnd = Match.Regex("30/05/2021", @"\d{2}\/\d{2}\/\d{4}"),
+                    start = Match.Regex("01/06/2021", @"\d{2}\/\d{2}\/\d{4}"),
+                    end = Match.Regex("10/06/2021", @"\d{2}\/\d{2}\/\d{4}"),
+                    registrationStart = Match.Regex("01/05/2021", @"\d{2}\/\d{2}\/\d{4}"),
+                    registrationEnd = Match.Regex("30/05/2021", @"\d{2}\/\d{2}\/\d{4}"),
                 })
             });
 
